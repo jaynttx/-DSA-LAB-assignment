@@ -10,11 +10,10 @@ using namespace std;
 
 void reverseArray(int arr[], int n) {
     for (int i = 0; i < n / 2; i++) {
-    
-    swap(arr[i], arr[n - i - 1]);
-
+        int temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = temp;
     }
-
 }
 
 void displayArray(int arr[], int n) {
