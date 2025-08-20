@@ -25,11 +25,13 @@ int main() {
     int n, arr[100], key;
     cin >> n;
 
-    for (int i = 0; i < n; i++){ cin >> arr[i];
-
+    for (int i = 0; i < n; i++){
+         cin >> arr[i];
+    
 
     }
-    cin >> key;
+
+cin >> key;
     int pos = binarySearch(arr, n, key);
     
     if (pos != -1) cout << "Found at index " << pos;

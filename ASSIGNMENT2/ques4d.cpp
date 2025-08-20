@@ -14,6 +14,7 @@ void sortString(char s[]) {
 
 
             if (s[i] > s[j]) {
+                
                 char t = s[i];
                 s[i] = s[j];
                 s[j] = t;
@@ -30,6 +31,6 @@ int main() {
     cin.getline(str, 100);
 
     sortString(str);
-    
+
     cout << str;
 }
